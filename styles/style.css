@@ -1,0 +1,74 @@
+* {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.quoteDiv {
+  margin-right: auto;
+  margin-left: auto;
+}
+.quoteButton {
+  width: 250px;
+  height: 75px;
+  border: 1px solid black;
+  background-repeat:no-repeat;
+  border-radius: 50px; 
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 5px 1px black;
+  margin-right: auto;
+  margin-left: auto;
+}
+p, h1 {
+  color: white;
+  margin-top: 25%;
+  padding: 15px;
+}
+button:focus {
+  outline:0;
+}
+button:hover {
+  border: 1px solid white;
+  color: white;
+  opacity: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.red {
+  -webkit-animation-name: red-ani;
+  -webkit-animation-duration: 1.75s;
+  -webkit-animation-iteration-count: once;
+  background-color: #DF654C;
+}
+.blue {
+  -webkit-animation-name: blue-ani;
+  -webkit-animation-duration: 1.75s;
+  -webkit-animation-iteration-count: once;
+  background-color: #4670AF;
+}
+.green {
+  -webkit-animation-name: green-ani;
+  -webkit-animation-duration: 1.75s;
+  -webkit-animation-iteration-count: once;
+  background-color: #73A43C;
+}
+.purple {
+  -webkit-animation-name: purple-ani;
+  -webkit-animation-duration: 1.75s;
+  -webkit-animation-iteration-count: once;
+  background-color: #9A5ABA;
+}
+@-webkit-keyframes purple-ani {
+  0% {background-color: white;text-positon: center;}
+  100% { background-color: #9A5ABA;font-color: white;  text-positon: center;}
+}
+@-webkit-keyframes green-ani {
+  0% {background-color: white;text-positon: center;}
+  100% {background-color: #73A43C;font-color: white; text-positon: center;}
+}
+@-webkit-keyframes blue-ani {
+  0% {background-color:white; text-positon: center;}
+  100% {background-color: #4670AF;font-color: white; text-positon: center;}
+}
+@-webkit-keyframes red-ani {
+  0% {background-color:white;text-positon: center;}
+  100% {background-color: #DF654C;font-color: white; text-positon: center;}
+}
