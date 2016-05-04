@@ -8,16 +8,18 @@ pickQuote = function() {
 if ($('#quoteHead').text() === randQuote){
   var randQuoteTwo = quoteArray[Math.round(Math.random() * quoteArray.length)];
   return randQuoteTwo;
-  };
-    return randQuote
+  } else {
+    return randQuote 
+  }
 };
 pickClass = function() {
   var randomClass = classes[Math.round(Math.random()*classes.length)];
   if ($('body').hasClass() === randomClass){
     var randomClassTwo = classes[Math.round(Math.random()*classes.length)];
     return randomClassTwo;
-  }
+  } else {
   return randomClass;
+}
 };
 $('#button1').click(function(){
     $('body').removeClass('purple red green blue');
